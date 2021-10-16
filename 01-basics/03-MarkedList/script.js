@@ -40,7 +40,7 @@ const app = createApp({
 
   computed: {
     emailMarks() {
-      return this.emails.map(item => {
+      return this.emails.map((item) => {
         return {
           title: item,
           mark: this.search !== '' && item.toLowerCase().includes(this.search.toLowerCase()),
@@ -48,4 +48,4 @@ const app = createApp({
       });
     },
   },
-}).mount('#app')
+}).mount('#app');
